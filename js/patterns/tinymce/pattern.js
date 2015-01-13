@@ -110,6 +110,7 @@ define([
         imageAlign: 'Align',
         scale: 'Size',
         alt: 'Alternative Text',
+        caption: 'Caption',
         externalImage: 'External Image URI'
       },
       // URL generation options

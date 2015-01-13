@@ -398,6 +398,7 @@ define([
         titleText: self.options.text.title,
         externalImageText: self.options.text.externalImage,
         altText: self.options.text.alt,
+        captionText: self.options.text.caption,
         imageAlignText: self.options.text.imageAlign,
         scaleText: self.options.text.scale,
         scales: self.options.scales,
@@ -416,6 +417,7 @@ define([
       self.$subject = $('input[name="subject"]', self.modal.$modal);
 
       self.$alt = $('input[name="alt"]', self.modal.$modal);
+      self.$caption = $('input[name="caption"]', self.modal.$modal);
       self.$align = $('select[name="align"]', self.modal.$modal);
       self.$scale = $('select[name="scale"]', self.modal.$modal);
 
@@ -473,6 +475,12 @@ define([
         'data-linkType': self.linkType,
         'data-scale': self.$scale.val()
       }, self.linkTypes[self.linkType].attributes());
+      if ( self.$caption.val() !== "" ){
+        $.extend(data, {
+            'class': 'image-' + self.$align.val() + ' captioned',
+            'data-caption': self.$caption.val()
+        });
+      }
       if (self.imgElm && !self.imgElm.getAttribute('data-mce-object')) {
         data.width = self.dom.getAttrib(self.imgElm, 'width');
         data.height = self.dom.getAttrib(self.imgElm, 'height');
@@ -578,6 +586,7 @@ define([
         if (self.imgElm) {
           var src = self.dom.getAttrib(self.imgElm, 'src');
           self.$alt.val(self.dom.getAttrib(self.imgElm, 'alt'));
+          self.$caption.val(self.dom.getAttrib(self.imgElm, 'data-caption'));
           linkType = self.dom.getAttrib(self.imgElm, 'data-linktype');
           if (linkType) {
             self.linkType = linkType;
