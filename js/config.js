@@ -3,6 +3,16 @@
 (function() {
   'use strict';
 
+  var tinymcePlugins = [
+    'advlist', 'anchor', 'autolink', 'autoresize', 'autosave', 'bbcode',
+    'charmap', 'code', 'colorpicker', 'contextmenu', 'directionality',
+    'emoticons', 'fullpage', 'fullscreen', 'hr', 'image', 'importcss',
+    'insertdatetime', 'layer', 'legacyoutput', 'link', 'lists', 'media',
+    'nonbreaking', 'noneditable', 'pagebreak', 'paste', 'preview', 'print',
+    'save', 'searchreplace', 'spellchecker', 'tabfocus', 'table', 'template',
+    'textcolor', 'textpattern', 'visualblocks', 'visualchars', 'wordcount'
+  ];
+
   var requirejsOptions = {
     baseUrl: './',
     optimize: 'uglify',
@@ -76,7 +86,8 @@
       'select2': 'bower_components/select2/select2',
       'sinon': 'bower_components/sinonjs/sinon',
       'text': 'bower_components/requirejs-text/text',
-      'tinymce': 'lib/tinymce/tinymce.min',
+      'tinymce': 'bower_components/tinymce-builded/js/tinymce/tinymce',
+      'tinymce-modern-theme': 'bower_components/tinymce-builded/js/tinymce/themes/modern/theme',
       'underscore': 'bower_components/lodash/dist/lodash.underscore'
     },
     shim: {
@@ -100,11 +111,25 @@
       'picker.date': { deps: [ 'picker' ] },
       'picker.time': { deps: [ 'picker' ] },
       'sinon': {exports: 'window.sinon'},
-      'tinymce': { exports: 'window.tinyMCE', init: function () { this.tinyMCE.DOM.events.domLoaded = true; return this.tinyMCE; }},
+      'tinymce': {
+        exports: 'window.tinyMCE',
+        init: function () {
+          this.tinyMCE.DOM.events.domLoaded = true;
+          return this.tinyMCE;
+        }
+      },
+      'tinymce-modern-theme': { deps: ['tinymce'] },
       'underscore': { exports: 'window._' }
     },
     wrapShim: true
   };
+  for(var i=0; i<tinymcePlugins.length; i=i+1){
+    var plugin = tinymcePlugins[i];
+    requirejsOptions.paths['tinymce-' + plugin] = 'bower_components/tinymce-builded/js/tinymce/plugins/' + plugin + '/plugin';
+    requirejsOptions.shim['tinymce-' + plugin] = {
+      deps: ['tinymce']
+    };
+  }
 
   if (typeof exports !== 'undefined' && typeof module !== 'undefined') {
     module.exports = requirejsOptions;
