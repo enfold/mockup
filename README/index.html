@@ -1,0 +1,596 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Mockup docs</title>
+    <link rel="icon" type="image/png" href="/mockup/favicon.ico">
+    <link rel="stylesheet" href="/mockup/dist/main.css">
+    <link rel="stylesheet" href="/mockup/dist/prismjs/themes/prism-okaidia.css">
+    <link rel="stylesheet" href="/mockup/dist/bootstrap/dist/css/bootstrap.min.css">
+    <!--<script type="text/javascript"
+	    src="http://localhost:8000/bundle.min.js"></script>-->
+    <script type="text/javascript" src="/mockup/dist/mockup/bundle.min.js"></script>
+    <script type="module" src="/mockup/dist/fakeserver.js"></script>
+  </head>
+  <body>
+    <div id="main-wrapper">
+      <nav id="sidebar">
+        <ul class="menu">
+          <li class="">
+            <a class="" href="/mockup/">Home</a>
+          </li>
+          
+          <li class="">
+            <a class="menu-item" href="/mockup/pat/autotoc/">Autotoc</a>
+          </li>
+          
+          <li class="">
+            <a class="menu-item" href="/mockup/pat/backdrop/">Backdrop</a>
+          </li>
+          
+          <li class="">
+            <a class="menu-item" href="/mockup/pat/contenbrowser/">Contentbrowser</a>
+          </li>
+          
+          <li class="">
+            <a class="menu-item" href="/mockup/pat/contentloader/">Content loader</a>
+          </li>
+          
+          <li class="">
+            <a class="menu-item" href="/mockup/pat/cookietrigger/">Cookie Trigger</a>
+          </li>
+          
+          <li class="">
+            <a class="menu-item" href="/mockup/pat/datatables/">DataTables</a>
+          </li>
+          
+          <li class="">
+            <a class="menu-item" href="/mockup/pat/formautofocus/">Formautofocus</a>
+          </li>
+          
+          <li class="">
+            <a class="menu-item" href="/mockup/pat/formunloadalert/">Formunloadalert</a>
+          </li>
+          
+          <li class="">
+            <a class="menu-item" href="/mockup/pat/livesearch/">Livesearch</a>
+          </li>
+          
+          <li class="">
+            <a class="menu-item" href="/mockup/pat/portletmanager/">Portlet Manager</a>
+          </li>
+          
+          <li class="">
+            <a class="menu-item" href="/mockup/pat/markspeciallinks/">MarkSpecialLinks</a>
+          </li>
+          
+          <li class="">
+            <a class="menu-item" href="/mockup/pat/modal/">Modal</a>
+          </li>
+          
+          <li class="">
+            <a class="menu-item" href="/mockup/pat/navigationmarker/">Navigation marker</a>
+          </li>
+          
+          <li class="">
+            <a class="menu-item" href="/mockup/pat/passwordstrength/">Password strength</a>
+          </li>
+          
+          <li class="">
+            <a class="menu-item" href="/mockup/pat/preventdoublesubmit/">Prevent double submit</a>
+          </li>
+          
+          <li class="">
+            <a class="menu-item" href="/mockup/pat/querystring/">Querystring</a>
+          </li>
+          
+          <li class="">
+            <a class="menu-item" href="/mockup/pat/recurrence/">Recurrence</a>
+          </li>
+          
+          <li class="">
+            <a class="menu-item" href="/mockup/pat/relateditems/">Related items</a>
+          </li>
+          
+          <li class="">
+            <a class="menu-item" href="/mockup/pat/select2/">Select2</a>
+          </li>
+          
+          <li class="">
+            <a class="menu-item" href="/mockup/pat/sortable/">Sortable</a>
+          </li>
+          
+          <li class="">
+            <a class="menu-item" href="/mockup/pat/structure-updater/">Structure Updater</a>
+          </li>
+          
+          <li class="">
+            <a class="menu-item" href="/mockup/pat/structure/">Structure</a>
+          </li>
+          
+          <li class="">
+            <a class="menu-item" href="/mockup/pat/textareamimetypeselector/">Textarea Mimetype Selector</a>
+          </li>
+          
+          <li class="">
+            <a class="menu-item" href="/mockup/pat/texteditor/">Text Editor</a>
+          </li>
+          
+          <li class="">
+            <a class="menu-item" href="/mockup/pat/tinymce/">tinyMCE</a>
+          </li>
+          
+          <li class="">
+            <a class="menu-item" href="/mockup/pat/toggle/">Toggle</a>
+          </li>
+          
+          <li class="">
+            <a class="menu-item" href="/mockup/pat/toolbar/">Toolbar</a>
+          </li>
+          
+          <li class="">
+            <a class="menu-item" href="/mockup/pat/tree/">Tree</a>
+          </li>
+          
+          <li class="">
+            <a class="menu-item" href="/mockup/pat/upload/">Upload</a>
+          </li>
+          
+          <li>---</li>
+          
+          <li class="">
+            <a class="menu-item" href="/mockup/docs/external/@patternslib/pat-code-editor/README/">pat-code-editor</a>
+          </li>
+          
+          <li class="">
+            <a class="menu-item" href="/mockup/pat/miller-columns-browser/">Miller Columns Browser</a>
+          </li>
+          
+          <li class="">
+            <a class="menu-item" href="/mockup/docs/external/@patternslib/patternslib/src/pat/auto-scale/documentation/">auto-scale</a>
+          </li>
+          
+          <li class="">
+            <a class="menu-item" href="/mockup/docs/external/@patternslib/patternslib/src/pat/auto-submit/documentation/">auto-submit</a>
+          </li>
+          
+          <li class="">
+            <a class="menu-item" href="/mockup/docs/external/@patternslib/patternslib/src/pat/auto-suggest/documentation/">auto-suggest</a>
+          </li>
+          
+          <li class="">
+            <a class="menu-item" href="/mockup/docs/external/@patternslib/patternslib/src/pat/autofocus/documentation/">autofocus</a>
+          </li>
+          
+          <li class="">
+            <a class="menu-item" href="/mockup/docs/external/@patternslib/patternslib/src/pat/bumper/documentation/">bumper</a>
+          </li>
+          
+          <li class="">
+            <a class="menu-item" href="/mockup/docs/external/@patternslib/patternslib/src/pat/calendar/documentation/">calendar</a>
+          </li>
+          
+          <li class="">
+            <a class="menu-item" href="/mockup/docs/external/@patternslib/patternslib/src/pat/carousel/documentation/">carousel</a>
+          </li>
+          
+          <li class="">
+            <a class="menu-item" href="/mockup/docs/external/@patternslib/patternslib/src/pat/checklist/documentation/">checklist</a>
+          </li>
+          
+          <li class="">
+            <a class="menu-item" href="/mockup/docs/external/@patternslib/patternslib/src/pat/clone/documentation/">clone</a>
+          </li>
+          
+          <li class="">
+            <a class="menu-item" href="/mockup/docs/external/@patternslib/patternslib/src/pat/collapsible/documentation/">collapsible</a>
+          </li>
+          
+          <li class="">
+            <a class="menu-item" href="/mockup/docs/external/@patternslib/patternslib/src/pat/colour-picker/documentation/">colour-picker</a>
+          </li>
+          
+          <li class="">
+            <a class="menu-item" href="/mockup/docs/external/@patternslib/patternslib/src/pat/date-picker/documentation/">date-picker</a>
+          </li>
+          
+          <li class="">
+            <a class="menu-item" href="/mockup/docs/external/@patternslib/patternslib/src/pat/datetime-picker/documentation/">datetime-picker</a>
+          </li>
+          
+          <li class="">
+            <a class="menu-item" href="/mockup/docs/external/@patternslib/patternslib/src/pat/depends/documentation/">depends</a>
+          </li>
+          
+          <li class="">
+            <a class="menu-item" href="/mockup/docs/external/@patternslib/patternslib/src/pat/display-time/documentation/">display-time</a>
+          </li>
+          
+          <li class="">
+            <a class="menu-item" href="/mockup/docs/external/@patternslib/patternslib/src/pat/equaliser/documentation/">equaliser</a>
+          </li>
+          
+          <li class="">
+            <a class="menu-item" href="/mockup/docs/external/@patternslib/patternslib/src/pat/expandable-tree/documentation/">expandable-tree</a>
+          </li>
+          
+          <li class="">
+            <a class="menu-item" href="/mockup/docs/external/@patternslib/patternslib/src/pat/focus/documentation/">focus</a>
+          </li>
+          
+          <li class="">
+            <a class="menu-item" href="/mockup/docs/external/@patternslib/patternslib/src/pat/forward/documentation/">forward</a>
+          </li>
+          
+          <li class="">
+            <a class="menu-item" href="/mockup/docs/external/@patternslib/patternslib/src/pat/fullscreen/documentation/">fullscreen</a>
+          </li>
+          
+          <li class="">
+            <a class="menu-item" href="/mockup/docs/external/@patternslib/patternslib/src/pat/gallery/documentation/">gallery</a>
+          </li>
+          
+          <li class="">
+            <a class="menu-item" href="/mockup/docs/external/@patternslib/patternslib/src/pat/grid/documentation/">grid</a>
+          </li>
+          
+          <li class="">
+            <a class="menu-item" href="/mockup/docs/external/@patternslib/patternslib/src/pat/image-crop/documentation/">image-crop</a>
+          </li>
+          
+          <li class="">
+            <a class="menu-item" href="/mockup/docs/external/@patternslib/patternslib/src/pat/inject-history/documentation/">inject-history</a>
+          </li>
+          
+          <li class="">
+            <a class="menu-item" href="/mockup/docs/external/@patternslib/patternslib/src/pat/inject/documentation/">inject</a>
+          </li>
+          
+          <li class="">
+            <a class="menu-item" href="/mockup/docs/external/@patternslib/patternslib/src/pat/markdown/documentation/">markdown</a>
+          </li>
+          
+          <li class="">
+            <a class="menu-item" href="/mockup/docs/external/@patternslib/patternslib/src/pat/masonry/documentation/">masonry</a>
+          </li>
+          
+          <li class="">
+            <a class="menu-item" href="/mockup/docs/external/@patternslib/patternslib/src/pat/menu/documentation/">menu</a>
+          </li>
+          
+          <li class="">
+            <a class="menu-item" href="/mockup/docs/external/@patternslib/patternslib/src/pat/minimalpattern/documentation/">minimalpattern</a>
+          </li>
+          
+          <li class="">
+            <a class="menu-item" href="/mockup/docs/external/@patternslib/patternslib/src/pat/modal/documentation/">modal</a>
+          </li>
+          
+          <li class="">
+            <a class="menu-item" href="/mockup/docs/external/@patternslib/patternslib/src/pat/navigation/documentation/">navigation</a>
+          </li>
+          
+          <li class="">
+            <a class="menu-item" href="/mockup/docs/external/@patternslib/patternslib/src/pat/notification/documentation/">notification</a>
+          </li>
+          
+          <li class="">
+            <a class="menu-item" href="/mockup/docs/external/@patternslib/patternslib/src/pat/push/documentation/">push</a>
+          </li>
+          
+          <li class="">
+            <a class="menu-item" href="/mockup/docs/external/@patternslib/patternslib/src/pat/scroll-box/documentation/">scroll-box</a>
+          </li>
+          
+          <li class="">
+            <a class="menu-item" href="/mockup/docs/external/@patternslib/patternslib/src/pat/scroll/documentation/">scroll</a>
+          </li>
+          
+          <li class="">
+            <a class="menu-item" href="/mockup/docs/external/@patternslib/patternslib/src/pat/selectbox/documentation/">selectbox</a>
+          </li>
+          
+          <li class="">
+            <a class="menu-item" href="/mockup/docs/external/@patternslib/patternslib/src/pat/slides/documentation/">slides</a>
+          </li>
+          
+          <li class="">
+            <a class="menu-item" href="/mockup/docs/external/@patternslib/patternslib/src/pat/sortable/documentation/">sortable</a>
+          </li>
+          
+          <li class="">
+            <a class="menu-item" href="/mockup/docs/external/@patternslib/patternslib/src/pat/stacks/documentation/">stacks</a>
+          </li>
+          
+          <li class="">
+            <a class="menu-item" href="/mockup/docs/external/@patternslib/patternslib/src/pat/subform/documentation/">subform</a>
+          </li>
+          
+          <li class="">
+            <a class="menu-item" href="/mockup/docs/external/@patternslib/patternslib/src/pat/switch/documentation/">switch</a>
+          </li>
+          
+          <li class="">
+            <a class="menu-item" href="/mockup/docs/external/@patternslib/patternslib/src/pat/syntax-highlight/documentation/">syntax-highlight</a>
+          </li>
+          
+          <li class="">
+            <a class="menu-item" href="/mockup/docs/external/@patternslib/patternslib/src/pat/tabs/documentation/">tabs</a>
+          </li>
+          
+          <li class="">
+            <a class="menu-item" href="/mockup/docs/external/@patternslib/patternslib/src/pat/toggle/documentation/">toggle</a>
+          </li>
+          
+          <li class="">
+            <a class="menu-item" href="/mockup/docs/external/@patternslib/patternslib/src/pat/tooltip/documentation/">tooltip</a>
+          </li>
+          
+          <li class="">
+            <a class="menu-item" href="/mockup/docs/external/@patternslib/patternslib/src/pat/validation/documentation/">validation</a>
+          </li>
+          
+          <li class="">
+            <a class="menu-item" href="/mockup/docs/external/@patternslib/patternslib/src/pat/zoom/documentation/">zoom</a>
+          </li>
+          
+        </ul>
+      </nav>
+
+      <main id="content">
+        <h1>Plone Mockup</h1>
+<p>Mockup is the JavaScript stack of the Plone Classic UI.</p>
+<h2>Usage</h2>
+<p>There are several options to integrate Mockup.</p>
+<ol>
+<li>
+<p>It comes pre-installed with Plone 6 Classic UI.</p>
+</li>
+<li>
+<p>You can install and compile a bundle. See <a href="#development">Development Section</a> below.</p>
+</li>
+<li>
+<p>You can download a <code>.zip</code> from <a href="https://github.com/plone/mockup/releases">Mockup's releases page on GitHub</a>.</p>
+</li>
+<li>
+<p>You can use a precompiled bundle from a CDN, like:</p>
+<pre class="language-html"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span> <span class="token attr-name">src</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>https://unpkg.com/@plone/mockup@latest/dist/bundle.min.js<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><span class="token script"></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">></span></span></code></pre>
+<p>or:</p>
+<pre class="language-html"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span> <span class="token attr-name">src</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>https://cdn.jsdelivr.net/npm/@plone/mockup@latest/dist/bundle.min.js<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><span class="token script"></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">></span></span></code></pre>
+</li>
+</ol>
+<h2>Install</h2>
+<ul>
+<li>
+<p>Have a current version of Node.js installed.</p>
+</li>
+<li>
+<p>To install, run: <code>make install</code>.</p>
+</li>
+<li>
+<p>To run the demo server, do: <code>make serve</code>.</p>
+<p>This starts up the webpack build process in watch mode.
+Any JavaScript changes are immediately compiled.
+For some changes - like for adding new packages via <code>yarn add</code> and then using it you might need to restart.
+The command also spins up a development server for our <code>11ty</code> based documentation and demo pages.
+If you don't need the docs running, you can run <code>yarn start:webpack</code> or <code>npm run start:webpack</code> instead, so that only the webpack devserver is running.</p>
+</li>
+<li>
+<p>Go to <code>http://localhost:8000</code>:
+On this port our demo and documentation pages are served.</p>
+</li>
+</ul>
+<h2>Mockup overview</h2>
+<p>Mockup is a JavaScript UI library which provides widgets, apps, and functionality for the Plone Classic UI frontend.
+It is based on Patternslib, and provides its functionality through patterns.
+Patterns are initialized and activated when a triggering CSS selector is found in the DOM tree.
+For example, the related items widget is initialized on a form input field with the CSS class <code>pat-relateditems</code>.
+The configuration is done via data attributes.
+For the related items pattern, it's an attribute called <code>data-pat-relateditems</code>.
+The data structure of the configuration can be a JSON string or CSS declaration as key-value pairs, with the key and value separated by a colon (<code>:</code>), and the pairs separated by a semicolon (<code>;</code>).
+Defining a JSON structure is more flexible though.</p>
+<p>Here are two examples.</p>
+<p><code>pat-relateditems</code> configuration as JSON structure:</p>
+<pre class="language-html"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>input</span><br>    <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>text<span class="token punctuation">"</span></span><br>    <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>pat-relateditems<span class="token punctuation">"</span></span><br>    <span class="token attr-name">data-pat-relateditems</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">'</span>{<br>        "selectableTypes": ["Document"],<br>        "vocabularyUrl": "relateditems-test.json"<br>    }<span class="token punctuation">'</span></span><br><span class="token punctuation">/></span></span></code></pre>
+<p><code>pat-relateditems</code> configuration as CSS declarations:</p>
+<pre class="language-html"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>input</span><br>    <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>text<span class="token punctuation">"</span></span><br>    <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>pat-relateditems<span class="token punctuation">"</span></span><br>    <span class="token attr-name">data-pat-relateditems</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span><br>        selectableTypes: Document;<br>        vocabularyUrl: relateditems-test.json;<br>    <span class="token punctuation">"</span></span><br><span class="token punctuation">/></span></span></code></pre>
+<p>Because of historic reasons, the Mockup pattern attributes are written in &quot;camelCase&quot;, for example <code>vocabularyUrl</code>.
+But to resemble the CSS syntax, new patterns should instead separate each word with a dash, for example <code>vocabulary-url</code>.</p>
+<h2>Mockup Patterns</h2>
+<ul>
+<li><a href="src/pat/autotoc/README.md">pat-autotoc</a>: Automatically create a table of contents.</li>
+<li><a href="src/pat/contentbrowser/README.md">pat-contentbrowser</a>: Show an offcanvas miller-column browser to select items.</li>
+<li><a href="src/pat/cookietrigger/README.md">pat-cookietrigger</a>: Show a DOM element if browser cookies are disabled.</li>
+<li><a href="src/pat/datatables/README.md">pat-datatables</a>: This pattern provides the functionality from https://datatables.net/</li>
+<li><a href="src/pat/formautofocus/README.md">pat-formautofocus</a>: Automatically set the focus on a form input field.</li>
+<li><a href="src/pat/formunloadalert/README.md">pat-formunloadalert</a>: Show a warning if the user leaves an unsaved form.</li>
+<li><a href="src/pat/livesearch/README.md">pat-livesearch</a>: Provide Plone's live search functionality.</li>
+<li><a href="src/pat/manageportlets/README.md">pat-manage-portlets</a>: Used by <code>plone.app.portlets</code> to manage portlets.</li>
+<li><a href="src/pat/markspeciallinks/README.md">pat-markspeciallinks</a>: Add a special class to links in certain conditions.</li>
+<li><a href="src/pat/modal/README.md">pat-modal</a>: Show content in a modal.</li>
+<li><a href="src/pat/navigationmarker/README.md">pat-navigationmarker</a>: Add classes to the main navigation.</li>
+<li><a href="src/pat/passwordstrength/README.md">pat-passwordstrength</a>: Check the strength of a password.</li>
+<li><a href="src/pat/preventdoublesubmit/README.md">pat-preventdoublesubmit</a>: Prevent multiple submissions of the same forn.</li>
+<li><a href="src/pat/querystring/README.md">pat-querystring</a>: Show the querystring selection app.</li>
+<li><a href="src/pat/recurrence/README.md">pat-recurrence</a>: Show the recurrence widget.</li>
+<li><a href="src/pat/select2/README.md">pat-select2</a>: Show a widget which enhances dropdown selections with automatic suggestions, search and tagging functionality.</li>
+<li><a href="src/pat/sortable/README.md">pat-sortable</a>: A pattern to make listings sortable.</li>
+<li><a href="src/pat/structure/README.md">pat-structure</a>: Plone's folder contents app.</li>
+<li><a href="src/pat/structure-updater/README.md">pat-structureupdater</a>: Update title and description based on the current folder contents location.</li>
+<li><a href="src/pat/textareamimetypeselector/README.md">pat-textareamimetypeselector</a>: Display the MIME type selection widget for textareas.</li>
+<li><a href="src/pat/tinymce/README.md">pat-tinymce</a>: Use the TinyMCE editor for HTML editing.</li>
+<li><a href="src/pat/toggle/README.md">pat-toggle</a>: A pattern to toggle classes on HTML elements.</li>
+<li><a href="src/pat/toolbar/README.md">pat-toolbar</a>: Render the Plone toolbar.</li>
+<li><a href="src/pat/tree/README.md">pat-tree</a>: Renders a navigable tree from a data structure.</li>
+<li><a href="src/pat/upload/README.md">pat-upload</a>: Upload files to Plone.</li>
+</ul>
+<p>Deprecated patterns:</p>
+<ul>
+<li><a href="src/pat/relateditems/README.md">pat-relateditems</a> (<em>deprecated</em>): Show a widget to select related items. (use <code>pat-contentbrowser</code> instead)</li>
+<li><a href="src/pat/backdrop/README.md">pat-backdrop</a> (<em>deprecated</em>): Renders a dark background.</li>
+<li><a href="src/pat/contentloader/README.md">pat-contentloader</a> (<em>deprecated</em>): Load remote or local content into a target.</li>
+<li><a href="src/pat/texteditor/README.md">pat-texteditor</a> (<em>deprecated</em>): Show a code editor.</li>
+</ul>
+<h2>Development</h2>
+<p>You can directly develop with the 11ty based documentation / demo server by running <code>make serve</code>.</p>
+<p>If you want to develop in Plone, you have two options:</p>
+<ol>
+<li>
+<p>Run <code>make watch-plone</code>. You need buildout to have plone.staticresources checked out next to Mockup.
+Mockup will compile it's bundle directly into the <code>++plone++static</code> directory of plone.staticresources and update it when you change something in Mockup.</p>
+</li>
+<li>
+<p>Run <code>npx yarn start:webpack</code>, go to the resource registry ( http://localhost:8080/Plone/@@resourceregistry-controlpanel ) and add the URL <code>http://localhost:8000/bundle.min.js</code> to the JavaScript input field of the plone bundle instead of the other URL <code>++plone++static/bundle-plone/bundle.min.js</code>.</p>
+</li>
+</ol>
+<p>For more commands inspect Makefile and the script part of the package.json.</p>
+<h3>Running tests</h3>
+<p>Run <code>make check</code> to run all tests including <code>eslint</code> checks.</p>
+<p>To run individual tests, run:</p>
+<ul>
+<li><code>jest</code>: Run all tests</li>
+<li><code>jest src/pat/PATH-TO-PATTERN</code>: Run a specific test suite</li>
+<li><code>jest src/pat/PATH-TO-PATTERN -t &quot;Test name&quot;</code>: Run a specific test matching &quot;Test name&quot; from a specific test suite.</li>
+<li><code>jest --watch</code>: Run the interactive test runner.</li>
+</ul>
+<h3>Debugging tests</h3>
+<p>The tests are based on jsdom - a library mocking DOM and HTML standards in JavaScript.
+No real browsers are involved, which make the tests run really fast.</p>
+<p>Still, you can connect to the Chrome debugging interface via:</p>
+<pre><code>node --inspect-brk node_modules/.bin/jest --runInBand ./src/pat/PATH-TO-PATTERN``
+</code></pre>
+<p>Connect in chrome via (You need to click &quot;continue&quot; or &quot;Resume script execution&quot; in the inspector once to proceed):</p>
+<pre><code>chrome://inspect
+</code></pre>
+<p>You can pass Jest any parameter it accepts, like <code>-t TESTPATTERN</code>::</p>
+<pre><code>node --inspect-brk node_modules/.bin/jest --runInBand ./src/pat/PATH-TO-PATTERN -t test.name
+</code></pre>
+<p>You can put some <code>debugger;</code> statements to the code to break the execution and investigate.</p>
+<h3>Developing external Packages</h3>
+<p>If you want to work on ony external package like Patternslib or any external Mockup pattern you can do so by linking those packages into the node_modules folder via <code>yarn link</code>.</p>
+<ol>
+<li>
+<p>Check out the external package you want to develop on.</p>
+</li>
+<li>
+<p>Make sure you have installed the dependencies in the development package (e.g. by running <code>yarn install</code>). (TODO: verify that!)</p>
+</li>
+<li>
+<p>Run <code>yarn link</code> in the external development package to register it with yarn.</p>
+</li>
+<li>
+<p>Run <code>yarn link &quot;PACKAGE-NAME&quot;</code> in mockup to create the node_modules symlink.</p>
+</li>
+</ol>
+<p>After developing you might want to run <code>yarn unlink &quot;PACKAGE-NAME&quot;</code> to unlink the development package.</p>
+<p>For more information see:</p>
+<ul>
+<li>https://classic.yarnpkg.com/en/docs/cli/link/</li>
+<li>https://classic.yarnpkg.com/en/docs/cli/unlink</li>
+<li>https://docs.npmjs.com/cli/v7/commands/npm-link</li>
+</ul>
+<p><strong>Please note:</strong>: Make sure to unlink and reinstall development pacakges before building a production bundle.
+In doubt, remove the node_modules directory and re-install.</p>
+<h3>Bundle build analyzation</h3>
+<p>https://survivejs.com/webpack/optimizing/build-analysis/
+https://formidable.com/blog/2018/finding-webpack-duplicates-with-inspectpack-plugin/</p>
+<p>Build the stats.json file:</p>
+<pre><code>npx yarn build:stats
+</code></pre>
+<p>Check dependency tree and why which package was included:
+https://www.npmjs.com/package/whybundled</p>
+<pre><code>npx whybundled stats.json
+</code></pre>
+<p>Visualize dependency tree and analyze bundle size:
+https://www.npmjs.com/package/webpack-bundle-analyzer</p>
+<pre><code>npx webpack-bundle-analyzer stats.json
+</code></pre>
+<h3>i18n message extraction</h3>
+<p>To update the translation file, the following needs to be done:</p>
+<ol>
+<li>Extract the messages from this package:</li>
+</ol>
+<pre><code>npx yarn run i18n
+</code></pre>
+<p>Or just <code>npm run i18n</code>...</p>
+<ol start="2">
+<li>Copy the widgets.pot file to plone.app.locales</li>
+</ol>
+<p>Assuming you are doing this from a buildout.coredev environment in the mockup folder:</p>
+<pre><code>cp widgets.pot ../plone.app.locales/plone/app/locales/locales/
+</code></pre>
+<ol start="3">
+<li>Run i18ndude to update the po files</li>
+</ol>
+<pre><code>cd ../plone.app.locales/plone/app/locales/locales
+i18ndude sync --pot widgets.pot */LC_MESSAGES/widgets.po
+</code></pre>
+<h3>i18n message handling in Plone</h3>
+<p>To test a translation, for example French:</p>
+<ul>
+<li>
+<p>Edit the po file <code>src/plone.app.locales/plone/app/locales/locales/fr/LC_MESSAGES/widgets.po</code>.</p>
+</li>
+<li>
+<p>Restart your instance to rebuild the mo file from the po file.</p>
+</li>
+<li>
+<p>Purge your localStorage and refresh the page to trigger a new download of the translations.</p>
+</li>
+</ul>
+<p>The translations are handled by <code>src/core/i18n.js</code>.
+This translation helper that calls the <code>@@plonejsi18n</code> view defined in plone.app.content to generate a JSON of the translations from the mo file.
+The <code>@@plonejsi18n</code> view is called one time for a given domain and language and the result is cached in localStorage for 24 hours.
+The only way to test the new translations is to restart the instance to update the mo file from the po file, and then to purge the localStorage to trigger a new download of the translations.</p>
+<h2>Style guide</h2>
+<ul>
+<li>Tab: 4 spaces for everything, except for HTML and XML files which must use 2 spaces, and the Makefile which must use tabs.
+This rule is defined in the <a href=".editorconfig">.editorconfig file</a>.</li>
+</ul>
+<h3>Commit style guide</h3>
+<p>We automatically generate the changelog from the commit messages following the <a href="https://www.conventionalcommits.org/">Conventional Commits specification</a>.
+Changelog generation is done by the <a href="https://github.com/release-it/conventional-changelog/">conventional changelog plugin</a> for <a href="https://github.com/release-it/release-it">release-it</a>.
+This is enforced via a pre-commit hook managed by <a href="https://github.com/typicode/husky">husky</a>.</p>
+<p><strong>And this is how you use it:</strong></p>
+<p>We have 4 different types of changelog entries:</p>
+<ul>
+<li>Breaking Changes (type: <code>breaking</code>),</li>
+<li>Features (type: <code>feat</code>),</li>
+<li>Bug Fixes (type: <code>fix</code>),</li>
+<li>Maintenance (type: <code>maint</code>).</li>
+</ul>
+<p>We can group commits in the changelog via a scope or grouping.
+Let's follow a convention and use these groupings, but the grouping is optional and any other group name can be used.</p>
+<ul>
+<li>&quot;Dependencies&quot; for upgrading package.json dependencies.</li>
+<li>&quot;Docs&quot; for documentation.</li>
+<li>&quot;Build&quot; for everything related to the release workflow, Webpack and building bundles.</li>
+<li>&quot;Cleanup&quot; for cleaning up or reformatting code.</li>
+<li>&quot;pat PATTERNNAME&quot; for changes to individual patterns in <code>src/pat</code>.</li>
+<li>&quot;core MODULENAME&quot; for changes to core modules in <code>src/core</code>.</li>
+</ul>
+<p>A commit message with a changelog grouping must be structured like so: <code>TYPE(GROUP): MESSAGE</code>.
+Without grouping: <code>TYPE: MESSAGE</code></p>
+<p>If the commit message doesn't follow this convention, then it won't be included in the changelog.
+To bypass the pre-commit hook, use the git <code>-n</code> switch.
+Example: <code>git commit yarn.lock -m &quot;yarn install.&quot; -n</code>.</p>
+<p>If you are working on a component like the structure pattern (pat-structure), use <code>pat structure</code> as a group.</p>
+<p>Examples:</p>
+<p>Add a feature to the structure pattern:</p>
+<pre class="language-shell"><code class="language-shell"><span class="token function">git</span> commit src/pat/structure <span class="token parameter variable">-m</span> <span class="token string">"feat(pat structure): Add feature to cook some coffee"</span></code></pre>
+<p>Cleanup task:</p>
+<pre class="language-shell"><code class="language-shell"><span class="token function">git</span> commit <span class="token parameter variable">-am</span> <span class="token string">"maint(Cleanup): Remove whitespace from documentation."</span></code></pre>
+<p>or without a grouping:</p>
+<pre class="language-shell"><code class="language-shell"><span class="token function">git</span> commit <span class="token parameter variable">-am</span> <span class="token string">"maint: Remove unnecessary file from root directory."</span></code></pre>
+<hr>
+<p><strong>Note</strong></p>
+<p>Please keep commits on the <code>yarn.lock</code> file or any other auto-generated code seperate.</p>
+<p>Just commit them seperately with <code>git commit yarn.lock -m &quot;yarn install&quot; -n</code>.</p>
+<p>Keeping them seperate reduces the effort when merging or rebasing branches where a merge conflict can easily happen.
+In such cases you can just withdraw your changes on the <code>yarn.lock</code> file, or remove those commits and reinstall with <code>yarn install</code> at the end of a successful merge or rebase.</p>
+<hr>
+
+      </main>
+    </div>
+  </body>
+</html>
